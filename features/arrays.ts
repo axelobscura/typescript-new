@@ -7,4 +7,11 @@ const carsByMake: string[][] = [
   ['camaro']
 ];
 
+carMakers.map((car:string): string => {
+  return car.toUpperCase();
+});
 
+// Flexible types
+const importanDates: (Date | string)[] = [new Date(), '2030-10-10'];
+
+importanDates.push('2030-10-10');
