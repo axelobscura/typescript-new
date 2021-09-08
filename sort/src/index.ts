@@ -7,6 +7,7 @@ class Sorter {
       for(let j = 0; j < length - i - 1; j++){
 
         // type guard
+        // type of array of numbers
         if(this.collection instanceof Array){
           if(this.collection[j] > this.collection[j + 1]){
             const leftHand = this.collection[j];
@@ -14,8 +15,12 @@ class Sorter {
             this.collection[j+1] = leftHand;
           }
         }
-        
 
+        //type of string
+        if(typeof this.collection === 'string'){
+
+        }
+        
       }
     }
   }
